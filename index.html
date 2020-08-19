@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendidendo JavaScript</title>
+</head>
+
+<body>
+    <h1>Introduccion a JavaScript</h1>
+
+    <div id="mensaje"></div>
+
+    <script type="text/javascript">
+        const nombre = prompt('¿Cual es tu nombre?') /*Ejemplo de variable puede ser var, const... */
+
+        //Para utilizar la llamada por id siempre tenemos que usar  document.getElementById
+        document.getElementById('mensaje').innerHTML = `Bienvenid@ ${nombre}`; //Usamos un String template `${nombre}`; siempre entre comillas chungas.
+    </script>
+
+</body>
+
+</html>
