@@ -12,11 +12,13 @@
 
     <div id="mensaje"></div>
 
-    <script type="text/javascript">
-        const nombre = prompt('¿Cual es tu nombre?') /*Ejemplo de variable puede ser var, const... */
-
-        //Para utilizar la llamada por id siempre tenemos que usar  document.getElementById
-        document.getElementById('mensaje').innerHTML = `Bienvenid@ ${nombre}`; //Usamos un String template `${nombre}`; siempre entre comillas chungas.
+    <!-- type="text/javascript" => No hace falta ponerlo porque ahora lo coje por defecto pero es como para indicar el tipo de texto que es...-->
+    <script>
+        console.time('Comienza')
+        console.table([1, 2, 3])
+        console.error('Hubo un error')
+        console.warn('Cuidado!!')
+        console.timeEnd('Acaba el tiempo...')
     </script>
 
 </body>
