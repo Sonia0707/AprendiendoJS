@@ -1,24 +1,43 @@
-//Cadenas de texto:
+// Algunas Funciones incluidas en el lenguaje de JavaScript:
 
-//Varibale:
+let banda = 'Metallica',
+    cancion = 'Enter Sandman';
+
 let nombre;
+let nombre10;
 
-//Puede ser una comilla simple o doble no importa:
-nombre = 'Juan';
-nombre = "Juan";
 
-//No hay problema de como usarlas en Español:
-let mensaje = 'Hola "niño"';
+nombre = banda + ': ' + cancion;
 
-//En Ingles si existe problema porque se usan comillas simples para algunas palabras, por lo tanto tenemos que poner una diagonal invertida:
-let mensaje2 = 'Don\'t do that';
+//length nos dice cuantas letras tiene nuestra varible
+console.log(banda.length); // Para saber longitud... Por ejemplo funcion inluida...
 
-//Concadenamos dos varibles: (Esta forma quedará obsoleta):
-let aprendido = 'Aprendiendo',
-    tecnologia = 'JavaScript';
+//contcat: Para concadenar tambien:
+nombre = nombre.concat(' ', 'y es genial');
 
-console.log(aprendido + ' ' + tecnologia);
+// Todo en mayusuclas:
+nombre = nombre.toUpperCase();
 
-//La forma mas usada para concadenar varibles de JavaScript ahora es esta:
-//El template String:
-console.log(`${aprendido} ${tecnologia}`);
+//Toda en minusculas:
+nombre = nombre.toLowerCase();
+
+//split => divide una cadena de texto y te convierte cada elemento en una posicion de un array:
+let actividad = 'Estoy aprendiendo JavaScript';
+nombre2 = actividad.split(' ');
+
+//si tuvieramos comas en la frase tendriamos que ponerlo de la siguiente forma:
+let intereses = 'Leer, caminar, escuchar musica, escribir, etc.';
+nombre = intereses.split(', ');
+
+//Reemplazar un valor de la variable: actividad
+nombre2 = actividad.replace('JavaScript', 'JS');
+
+//Revisar que algo exista:
+nombre10 = actividad.includes('JS');
+//se usa mucho como para validar si han puesto un @ en un correo por ejemplo:
+let email = 'correo@gmail.com';
+nombre10 = email.includes('@');
+
+//Repetir variables: (salto de linea \n)
+let repit = 'Repite la frase 10 veces. \n';
+console.log(repit.repeat(10));
