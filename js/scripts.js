@@ -1,44 +1,24 @@
-//Variables de JavaScript 3 formas: 
+//Cadenas de texto:
 
-//1º:
-var nombre;
+//Varibale:
+let nombre;
 
-//2º:
-let nombre2;
+//Puede ser una comilla simple o doble no importa:
+nombre = 'Juan';
+nombre = "Juan";
 
-//3º:
-const nombre3;
+//No hay problema de como usarlas en Español:
+let mensaje = 'Hola "niño"';
 
-//Igualdad:
-/**Todas las varibles declaradas tienen que seguir el protocolo de ES6... 
- * No pueden empezar por numero, asterisco * , ni +
- * Es mejor seguir la programación de ES6 =>
- * 
- * var nombreCliente = 'Pedro' => camelCase.
- * var nombre_cliente = 'Pedro' => underscore.
- * var NombreCliente = 'Pedro' => pascal case.
- * 
- * var y let => se puede iniciarliar la varible vacia y despues dar el valor.
- * 
- */
+//En Ingles si existe problema porque se usan comillas simples para algunas palabras, por lo tanto tenemos que poner una diagonal invertida:
+let mensaje2 = 'Don\'t do that';
 
-//Diferencias:
-/**Entre var , let y const:
- * var: Se puede declarar una varible con el mismo nombre mas de una vez:
- * var nombreCliente = 'Pedro';
- * var nombreCliente = 'Juan';
- * 
- * let: No se puede declarar de nuevo la misma variable solo sustituir:
- * let nombreCliente = 'Pedro';
- * nombreCliente = 'Juan';
- * 
- * const: tiene que tener valor inicial simpre, no como let y var que no importa
- * que de primeras no lo tenga y luego se le de.
- * 
- * Y lo mas IMPORTANTE const, no puede rescribirse tiene el mismo valor siempre.
- * 
- * Ejemplo del con muy util es cuando utilizas elementos del html, porque estos nunca cambian:
- * 
- * => const divMensaje = document.getElementById('mensaje')
- * 
- */
+//Concadenamos dos varibles: (Esta forma quedará obsoleta):
+let aprendido = 'Aprendiendo',
+    tecnologia = 'JavaScript';
+
+console.log(aprendido + ' ' + tecnologia);
+
+//La forma mas usada para concadenar varibles de JavaScript ahora es esta:
+//El template String:
+console.log(`${aprendido} ${tecnologia}`);
